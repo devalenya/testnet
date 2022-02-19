@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
 
 contract NFTMarketPlace is ReentrancyGuard {
-    uint256   marketFees = 0.010 ether;
+    uint256   marketFees = 6000 ckb;
     address payable owner;
 
       using Counters for Counters.Counter;
