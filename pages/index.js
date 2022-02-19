@@ -194,7 +194,7 @@ const buyNFT = async (nftItem)=>{
              (unsoldItems.length < 5 )?
               <>
               <h1 className=" py-20 text-4xl tracking-tight font-extrabold text-yellow-500 sm:text-5xl md:text-6xl">
-                  <span className="block lg:py-3 xl:inline">There is Lessthan 5 NFts </span>
+                  <span className="block lg:py-3 xl:inline">Our Five Latest NFts </span>
                   </h1> 
              </>:
              <>
@@ -263,12 +263,12 @@ const buyNFT = async (nftItem)=>{
             </div>
             <div className="col-span-2 pt-1 ">
               <p className="text-gray-800 font-bold lg:text-sm">Price</p>
-              <p className="text-gray-500 text-sm font-bold">{item.price} ETH</p>
+              <p className="text-gray-500 text-sm font-bold">{item.price} CKB</p>
             </div>
         
           </div>
           <div className="bg-gray-800 w-72 lg:w-5/6 m-auto mt-6 p-2 hover:bg-yellow-500 rounded-2xl  text-white text-center shadow-xl shadow-bg-blue-700">
-            <button classNames="lg:text-sm text-lg font-bold" onClick = {()=>buyNFT(item)}>Proceed to Buy</button>
+            <!--<button classNames="lg:text-sm text-lg font-bold" onClick = {()=>buyNFT(item)}>Proceed to Buy</button>-->
           </div>
           <div className="text-center m-auto mt-6 w-full h-1">
           </div>
