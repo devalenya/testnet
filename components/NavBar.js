@@ -41,14 +41,14 @@ import Link from 'next/link'
               <Link href="/">
             <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Explore</a>
                 </Link>
-               <!-- <Link  href="/purchased">
-            <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Purchased</a>
-            </Link>-->
                 <Link href="/dashboard">
             <a  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Dashbaord</a>
             </Link>
                 <Link href="/create-nfts">
             <a  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Create NFt</a>
+            </Link>
+                <Link  href="/purchased">
+            <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Purchased</a>
             </Link>
                 
           </div>
@@ -64,15 +64,16 @@ import Link from 'next/link'
        <Link  href="/">
       <a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Explore</a>
       </Link>
-               <!-- <Link href="/purchased">
-      <a  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Purchased</a>
-      </Link>-->
                 <Link href="/dashboard">
       <a  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Dashbaord</a>
       </Link>
          <Link href="/create-nfts">
       <a  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Create NFt</a>
       </Link>
+                <Link href="/purchased">
+      <a  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Purchased</a>
+      </Link>
+     
     </div>
   </div>
 </nav>
