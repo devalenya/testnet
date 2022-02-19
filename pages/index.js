@@ -266,7 +266,7 @@ const buyNFT = async (nftItem)=>{
         
           </div>
           <div className="bg-gray-800 w-72 lg:w-5/6 m-auto mt-6 p-2 hover:bg-yellow-500 rounded-2xl  text-white text-center shadow-xl shadow-bg-blue-700">
-            <button classNames="lg:text-sm text-lg font-bold" onClick = {()=>buyNFT(item)}>Proceed to Buy</button>
+            
           </div>
           <div className="text-center m-auto mt-6 w-full h-1">
           </div>
