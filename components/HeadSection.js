@@ -96,10 +96,10 @@ const HeadSection = () => {
                    <div className="sm:text-center lg:text-left">
                    <h1 className="text-4xl tracking-tight font-extrabold text-yellow-500 sm:text-5xl md:text-6xl">
                        <span className="block lg:py-3 xl:inline">Upload Your NFTs </span>
-                       <span className="block dark:text-white xl:inline">Discover, Collect, and Sell Extraordinary NFTs</span>
+                       <span className="block dark:text-white xl:inline">Create an excellent NFTs easily.</span>
                        </h1>
                        <p className="mt-3 text-base dark:text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0" >
-                       on the world's first & largest NFT marketplace,this Arabic Dapps Course that is will learn more about nfts and solidity programming language   </p>
+                      An immersive NFT collection, with a gamified hunt for rarity and reward, hosted on the Nervos Blockchain.<br> Exknowplay NFT is a native token, acquired by simply holding NFT, that can be sold.   </p>
                     
                            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                        <div className="rounded-md shadow">
