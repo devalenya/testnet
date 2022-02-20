@@ -145,13 +145,14 @@ export default function Home() {
               }))
 
               setUnsoldItems(items)
+                window.alert("You Are Now Connected To The Nervos Network")
          
 
 
 
  
            }else{
-               window.alert("You are at Wrong Network, please set your wallet to POLYJUICE <br>And refresh the page")
+               window.alert("You are at Wrong Network, please set your wallet to Polijuice Nervos Testnet and refresh the page")
            }
 
 
@@ -231,7 +232,7 @@ const buyNFT = async (nftItem)=>{
              
                <div className="px-4 " style={{maxWidth:"1600px"}}>
                <h1 className=" px-10 text-xl tracking-tight font-extrabold text-yellow-500 sm:text-3xl md:text-4xl">
-                  <span className="block lg:py-3 xl:inline">Explore All Minted Nfts </span>
+                  <center><span className="block lg:py-3 xl:inline">Explore All Minted Nfts </span></center>
                   </h1> 
               {
                   !unsoldItems.length ? 
