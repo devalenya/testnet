@@ -39,7 +39,7 @@ export default function Home() {
                 })
             } else {
 
-              window.alert(" UNlock Your Wallet Or Please install any provider wallet like MetaMask")
+              window.alert(" Connect Your Wallet Or Please install provider wallet like MetaMask")
                 
               router.push("https://metamask.io/download.html")
             }
@@ -151,7 +151,7 @@ export default function Home() {
 
  
            }else{
-               window.alert("You are at Wrong Netweok, Connect with Roposten Please")
+               window.alert("You are at Wrong Network, please set your wallet to POLYJUICE <br>And refresh the page")
            }
 
 
