@@ -181,7 +181,7 @@ const buyNFT = async (nftItem)=>{
 
 
 
-/*
+
     return (
          <div >
            {
@@ -290,7 +290,7 @@ const buyNFT = async (nftItem)=>{
            
              
          </div>
-    )*/
+    )
 
 
 }
