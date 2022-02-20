@@ -165,7 +165,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
  
            }else{
-               window.alert("You are at Wrong Network, set youe metamask wallet to "Godwoken Testnet" and reload your page")
+               window.alert("You are at Wrong Network, set youe metamask wallet to GODWOKEN POLYJUICE TESTNET then reload your page")
            }
 
 
