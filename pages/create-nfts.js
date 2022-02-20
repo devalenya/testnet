@@ -165,7 +165,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
  
            }else{
-               window.alert("You are at Wrong Netweok, Connect with Roposten Please")
+               window.alert("You are at Wrong Network, set youe metamask wallet to "Godwoken Testnet" and reload your page")
            }
 
 
@@ -192,9 +192,10 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
                 />
                  <input
                 className = "mt-8 borderd rounded p-3 bg-gray-200"
-                placeholder="Enter your NFT Price in Ether"
+                placeholder="Enter your NFT Price "
+                value="500" 
                 onChange = {e=>setNftFormInput({...nftFormInput,price:e.target.value})}
-                />
+                disabled/>
                  <textarea
                 className = "mt-8 borderd rounded p-3 bg-gray-200"
                 placeholder="Enter your NFT Description"
