@@ -56,7 +56,7 @@ module.exports = {
         // websocket: true        // Enable EventEmitter interface for web3 (default: false)
         // },
         // Another network with more advanced options...
-         nervos: {
+         devalopment: {
          port: 8777,             // Custom port
          network_id: 71393,       // Custom network
          gas: 8500000,           // Gas sent with each transaction (default: ~6700000)
