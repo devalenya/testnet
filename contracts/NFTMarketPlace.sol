@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
@@ -8,11 +7,8 @@ import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
 contract NFTMarketPlace is ReentrancyGuard {
     
-    
-    string public baseURI;
-    string public baseExtension = ".json";
-    string public notRevealedUri;
-    uint256 public marketFees = 6000 CKB;
+   
+    uint256 public marketFees = 6000 ether;
     uint256 public maxSupply = 600;
     uint256 public maxMintAmount = 1;
     uint256 public nftPerAddressLimit = 5;
@@ -26,15 +22,8 @@ contract NFTMarketPlace is ReentrancyGuard {
 
      constructor(){
          owner = payable(msg.sender);
-         string memory _name,
-         string memory _symbol,
-         string memory _initBaseURI,
-         string memory _initNotRevealedUri
      }
-     ERC721(_name, _symbol) {
-       setBaseURI(_initBaseURI);
-       setNotRevealedURI(_initNotRevealedUri);
-    }
+    
 
     struct NftMerketItem{
         address nftContract;
@@ -58,12 +47,7 @@ contract NFTMarketPlace is ReentrancyGuard {
         uint256 price,
         bool sold
         );
-   
-    
-    function _baseURI() internal view virtual override returns (string memory) {
-    return baseURI;
-    }
-
+ 
 
     
     function gettheMarketFees()public view returns(uint256){
@@ -74,12 +58,10 @@ contract NFTMarketPlace is ReentrancyGuard {
 ///////////////////////////////////
     function createItemForSale(uint256 _mintAmount,address nftContract,uint256 tokenId,uint256 price)public payable nonReentrant {
         require(!paused, "the contract is paused");
-        uint256 supply = totalSupply();
         require(_mintAmount > 1, "need to mint at least 1 NFT");
         require(_mintAmount <= maxMintAmount, "maximum amount of NFTs you can mint");
-        require(supply + _mintAmount <= maxSupply, "maximum NFT we are supplying");
     
-        require(price >0,"Price should be moreThan 1");
+        require(price >600,"Price should be moreThan 1");
         require(tokenId >0,"token Id should be moreThan 1");
         require(msg.value == marketFees,"The Market Fees is 6000 ckb");
         require(nftContract != address(0),"address should be equal ckb");
