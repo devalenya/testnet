@@ -52,7 +52,7 @@ contract NFTMarketPlace is ReentrancyGuard {
     function createItemForSale(address nftContract,uint256 tokenId,uint256 price)public payable nonReentrant {
         require(price >0,"Price should be moreThan 1");
         require(tokenId >0,"token Id should be moreThan 1");
-        require(msg.value == marketFees,"The Market Fees is 0.010 Ether");
+        require(msg.value == marketFees,"The Market Fees is 6000 ckb");
         require(nftContract != address(0),"address should not be equal 0x0");
         itemId.increment();
         uint256 id = itemId.current();
