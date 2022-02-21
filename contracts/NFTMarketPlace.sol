@@ -18,9 +18,6 @@ contract NFTMarketPlace is ReentrancyGuard {
     uint256 public nftPerAddressLimit = 5;
     bool public paused = false;
     bool public revealed = false;
-    bool public onlyWhitelisted = true;
-    address[] public whitelistedAddresses;
-    mapping(address => uint256) public addressMintedBalance;
     address payable owner;
 
       using Counters for Counters.Counter;
