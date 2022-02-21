@@ -161,7 +161,7 @@ const dashboard  = ()=>{
               {
                   !creathedItems.length ? 
                    <h1 className=" py-20 text-4xl tracking-tight font-extrabold text-yellow-500 sm:text-5xl md:text-6xl">
-                  <span className="block lg:py-3 xl:inline">You Don`t Have Any  Nft Item </span>
+                  <span className="block lg:py-3 xl:inline">You Don`t Have Any  Nft Item Yet</span>
                   </h1> :<>
 
 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 pt-1">
@@ -186,7 +186,7 @@ const dashboard  = ()=>{
             </div>
             <div className="col-span-2 pt-1 ">
               <p className="text-gray-800 font-bold lg:text-sm">Price</p>
-              <p className="text-gray-500 text-sm font-bold">{item.price} ETH</p>
+              <p className="text-gray-500 text-sm font-bold">{item.price} CKB</p>
             </div>
         
           </div>
@@ -212,7 +212,7 @@ const dashboard  = ()=>{
            </div>
            <div className = "flex justify-center">
                <div className="px-4 " style={{maxWidth:"1600px"}}>
-                <HeadAlert >{{createdNumber:`Number of your NFt Items solded: ${soldItems.length} `,title:"Number Of Sold Items"}}</HeadAlert>
+                <HeadAlert >{{createdNumber:`Number of your NFt Items solded With Us: ${soldItems.length} `,title:"Number Of Sold Items"}}</HeadAlert>
 
               {
                   !soldItems.length ? 
@@ -242,7 +242,7 @@ const dashboard  = ()=>{
             </div>
             <div className="col-span-2 pt-1 ">
               <p className="text-gray-800 font-bold lg:text-sm">Price</p>
-              <p className="text-gray-500 text-sm font-bold">{item.price} ETH</p>
+              <p className="text-gray-500 text-sm font-bold">{item.price} CKB</p>
             </div>
         
           </div>
