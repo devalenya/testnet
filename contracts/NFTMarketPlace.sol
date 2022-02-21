@@ -7,6 +7,13 @@ import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
 
 contract NFTMarketPlace is ReentrancyGuard {
+    
+    
+    uint256 public maxSupply = 600;
+    uint256 public maxMintAmount = 5;
+    bool public paused = false;
+    bool public revealed = false;
+    string public notRevealedUri;
     uint256   marketFees = 6000 ckb;
     address payable owner;
 
@@ -16,11 +23,20 @@ contract NFTMarketPlace is ReentrancyGuard {
 
      constructor(){
          owner = payable(msg.sender);
+         string memory _name,
+         string memory _symbol,
+         string memory _initBaseURI,
+         string memory _initNotRevealedUri
+         ) ERC721(_name, _symbol) {
+          setBaseURI(_initBaseURI);
+          setNotRevealedURI(_initNotRevealedUri);
+          }
      }
 
     struct NftMerketItem{
         address nftContract;
         uint256 id;
+        
         uint256 tokenId;
         address payable owner;
         address  payable seller;
@@ -50,10 +66,24 @@ contract NFTMarketPlace is ReentrancyGuard {
      mapping(uint256=>NftMerketItem) private idForMarketItem;
 ///////////////////////////////////
     function createItemForSale(address nftContract,uint256 tokenId,uint256 price)public payable nonReentrant {
+        uint256 supply = totalSupply();
+        require(!paused);
+        require(_mintAmount > 0);
+        require(_mintAmount <= maxMintAmount);
+        require(supply + _mintAmount <= maxSupply);
+
+        if (msg.sender != owner()) {
+         require(msg.value >= marketFees * _mintAmount);
+         }
+
+        for (uint256 i = 1; i <= _mintAmount; i++) {
+         _safeMint(msg.sender, supply + i);
+        }
+    
         require(price >0,"Price should be moreThan 1");
         require(tokenId >0,"token Id should be moreThan 1");
         require(msg.value == marketFees,"The Market Fees is 6000 ckb");
-        require(nftContract != address(0),"address should not be equal 0x0");
+        require(nftContract != address(0),"address should be equal ckb");
         itemId.increment();
         uint256 id = itemId.current();
 
@@ -92,7 +122,7 @@ contract NFTMarketPlace is ReentrancyGuard {
 
 function getMyItemCreated() public view returns(NftMerketItem[] memory){
 uint256 totalItemCount = itemId.current(); 
-uint myItemCount=0;//10
+uint myItemCount=5;//10
 uint myCurrentIndex =0;
 
 for(uint i = 0;i<totalItemCount;i++){
