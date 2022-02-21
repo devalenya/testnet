@@ -9,12 +9,18 @@ import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 contract NFTMarketPlace is ReentrancyGuard {
     
     
+    string public baseURI;
+    string public baseExtension = ".json";
+    string public notRevealedUri;
+    uint256 public marketFees = 6000 CKB;
     uint256 public maxSupply = 600;
-    uint256 public maxMintAmount = 5;
+    uint256 public maxMintAmount = 1;
+    uint256 public nftPerAddressLimit = 5;
     bool public paused = false;
     bool public revealed = false;
-    string public notRevealedUri;
-    uint256   marketFees = 6000 ckb;
+    bool public onlyWhitelisted = true;
+    address[] public whitelistedAddresses;
+    mapping(address => uint256) public addressMintedBalance;
     address payable owner;
 
       using Counters for Counters.Counter;
@@ -27,11 +33,11 @@ contract NFTMarketPlace is ReentrancyGuard {
          string memory _symbol,
          string memory _initBaseURI,
          string memory _initNotRevealedUri
-         ) ERC721(_name, _symbol) {
-          setBaseURI(_initBaseURI);
-          setNotRevealedURI(_initNotRevealedUri);
-          }
      }
+     ERC721(_name, _symbol) {
+       setBaseURI(_initBaseURI);
+       setNotRevealedURI(_initNotRevealedUri);
+    }
 
     struct NftMerketItem{
         address nftContract;
@@ -56,6 +62,10 @@ contract NFTMarketPlace is ReentrancyGuard {
         bool sold
         );
    
+    
+    function _baseURI() internal view virtual override returns (string memory) {
+    return baseURI;
+    }
 
 
     
@@ -65,20 +75,12 @@ contract NFTMarketPlace is ReentrancyGuard {
 ///////////////////////////////////
      mapping(uint256=>NftMerketItem) private idForMarketItem;
 ///////////////////////////////////
-    function createItemForSale(address nftContract,uint256 tokenId,uint256 price)public payable nonReentrant {
+    function createItemForSale(uint256 _mintAmount,address nftContract,uint256 tokenId,uint256 price)public payable nonReentrant {
+        require(!paused, "the contract is paused");
         uint256 supply = totalSupply();
-        require(!paused);
-        require(_mintAmount > 0);
-        require(_mintAmount <= maxMintAmount);
-        require(supply + _mintAmount <= maxSupply);
-
-        if (msg.sender != owner()) {
-         require(msg.value >= marketFees * _mintAmount);
-         }
-
-        for (uint256 i = 1; i <= _mintAmount; i++) {
-         _safeMint(msg.sender, supply + i);
-        }
+        require(_mintAmount > 1, "need to mint at least 1 NFT");
+        require(_mintAmount <= maxMintAmount, "maximum amount of NFTs you can mint");
+        require(supply + _mintAmount <= maxSupply, "maximum NFT we are supplying");
     
         require(price >0,"Price should be moreThan 1");
         require(tokenId >0,"token Id should be moreThan 1");
