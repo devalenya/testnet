@@ -6,7 +6,7 @@ import React from 'react'
 <div className="flex justify-center items-center">
 <div className="w-3/3  rounded-lg shadow-sm p-8">
 <div className="flex justify-between items-center">
-<h1 className="font-extrabold-pink tracking-wider">My Account Information:</h1>
+<h1 className="font-extrabold tracking-wider">My Account Information:</h1>
 <button className="hover:bg-blue-50 p-2 rounded-sm">
 </button></div><div className="flex flex-col mt-5 gap-7 text-sm">
 <div className="bg-yellow-50 flex justify-between items-center p-3 rounded-sm shadow-sm">
