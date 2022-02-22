@@ -29,7 +29,7 @@ import Link from 'next/link'
         </div>
         <div className="logoName">
             <Link  href="/">
-            <a className="text-red-500 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-bold">Exknowplay NFTs</a>
+            <a className="text-pink-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-bold">Exknowplay NFTs</a>
             </Link>
             </div>
 
@@ -39,13 +39,13 @@ import Link from 'next/link'
         <div className="hidden sm:block sm:ml-6">
           <div className="flex space-x-4">
               <Link href="/">
-            <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</a>
+            <a className="text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</a>
                 </Link>
                 <Link href="/dashboard">
-            <a  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">My NFT</a>
+            <a  className="text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">My NFT</a>
             </Link>
                 <Link href="/create-nfts">
-            <a  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Create NFt</a>
+            <a  className="text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Create NFt</a>
             </Link>
                 
                 
