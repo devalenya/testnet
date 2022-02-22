@@ -8,12 +8,7 @@ import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 contract NFTMarketPlace is ReentrancyGuard {
     
    
-    uint256 public marketFees = 6000 ether;
-    uint256 public maxSupply = 600;
-    uint256 public maxMintAmount = 1;
-    uint256 public nftPerAddressLimit = 5;
-    bool public paused = false;
-    bool public revealed = false;
+    uint256 public marketFees = 0.02628 ether;
     address payable owner;
 
       using Counters for Counters.Counter;
@@ -57,10 +52,6 @@ contract NFTMarketPlace is ReentrancyGuard {
      mapping(uint256=>NftMerketItem) private idForMarketItem;
 ///////////////////////////////////
     function createItemForSale(uint256 _mintAmount,address nftContract,uint256 tokenId,uint256 price)public payable nonReentrant {
-        require(!paused, "the contract is paused");
-        require(_mintAmount > 1, "need to mint at least 1 NFT");
-        require(_mintAmount <= maxMintAmount, "maximum amount of NFTs you can mint");
-    
         require(price >600,"Price should be moreThan 1");
         require(tokenId >0,"token Id should be moreThan 1");
         require(msg.value == marketFees,"The Market Fees is 6000 ckb");
