@@ -213,20 +213,20 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
                                     </svg>
                                     <div className="flex flex-auto max-h-48 w-2/5 mx-auto -mt-10">
                                         {
-                                            urlHash?    <img className="has-mask  object-center" src="https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png" alt="freepik image"/> :                                    <img className="has-mask h-36 object-center" src="https://img.freepik.com/free-vector/image-upload-concept-landing-page_52683-27130.jpg?size=338&ext=jpg" alt="freepik image"/>
+                                            urlHash?    <img className="has-mask  object-center" src="https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png" alt="NFT art"/> :                                    <img className="has-mask h-36 object-center" src="https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png?size=500&ext=png" alt="NFT art"/>
 
 
                                         }
                                     </div>
-                                    <p className="pointer-none text-pink-500 "><span className="text-sm">Drag and drop</span> files here <br /> or <a  id="" className="text-pink-600 hover:underline">select a file</a> from your computer</p>
+                                    
+
+
                                 </div>
-                                <input type="file" onChange={onChange} />
+                                <input type="file" onChange={onChange} value="https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png" />
                             </label>
                         </div>
                     </div>
-                            <p className="text-sm text-pink-300">
-                                <span>File type: png,jpg,jpeg</span>
-                            </p>
+                            
 
                             <button className="font-bold bg-pink-500 mt-5 rounded p-4 text-white"  onClick={createMarketItem}>Mint Your NFT</button>
 
