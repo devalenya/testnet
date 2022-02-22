@@ -160,7 +160,7 @@ const dashboard  = ()=>{
 
               {
                   !creathedItems.length ? 
-                   <h1 className=" py-20 text-4xl tracking-tight font-extrabold text-yellow-500 sm:text-5xl md:text-6xl">
+                   <h1 className=" py-20 text-4xl tracking-tight font-extrabold text-pink-500 sm:text-5xl md:text-6xl">
                   <span className="block lg:py-3 xl:inline">You Don`t Have Any  Nft Item Yet</span>
                   </h1> :<>
 
@@ -175,9 +175,9 @@ const dashboard  = ()=>{
       <div className="w-80 mt-24 m-auto lg:mt-16 max-w-sm">
         <img src={item.image} alt=""className="rounded-t-2xl shadow-2xl lg:w-full 2xl:w-full 2xl:h-44 object-cover"/>
         <div className="bg-white shadow-2xl rounded-b-3xl">
-          <h2 className="text-center text-gray-800 text-2xl font-bold pt-6">{item.name}</h2>
+          <h2 className="text-center text-pink-800 text-2xl font-bold pt-6">{item.name}</h2>
           <div className="w-5/6 m-auto">
-            <p className="text-center text-gray-500 pt-5"> {item.description}</p>
+            <p className="text-center text-pink-500 pt-5"> {item.description}</p>
           </div>
           <div className="grid grid-cols-4 w-72 lg:w-5/6 m-auto bg-indigo-50 mt-5 p-4 lg:p-4 rounded-2xl">
             <div className="col-span-1 flex">
@@ -185,8 +185,8 @@ const dashboard  = ()=>{
               <img className="flex justify-center w-15 lg:w-12" src="https://img.icons8.com/fluency/48/000000/ethereum.png" alt="music icon"/>
             </div>
             <div className="col-span-2 pt-1 ">
-              <p className="text-gray-800 font-bold lg:text-sm">Price</p>
-              <p className="text-gray-500 text-sm font-bold">{item.price} CKB</p>
+              <p className="text-pink-800 font-bold lg:text-sm">Price</p>
+              <p className="text-pink-500 text-sm font-bold">{item.price} CKB</p>
             </div>
         
           </div>
@@ -216,7 +216,7 @@ const dashboard  = ()=>{
 
               {
                   !soldItems.length ? 
-                   <h1 className=" py-20 text-4xl tracking-tight font-extrabold text-yellow-500 sm:text-5xl md:text-6xl">
+                   <h1 className=" py-20 text-4xl tracking-tight font-extrabold text-pink-500 sm:text-5xl md:text-6xl">
                   <span className="block lg:py-3 xl:inline">You Don`t Have Any  Sold Item </span>
                   </h1> :<>
 
@@ -231,9 +231,9 @@ const dashboard  = ()=>{
       <div className="w-80 mt-24 m-auto lg:mt-16 max-w-sm">
         <img src={item.image} alt=""className="rounded-t-2xl shadow-2xl lg:w-full 2xl:w-full 2xl:h-44 object-cover"/>
         <div className="bg-white shadow-2xl rounded-b-3xl">
-          <h2 className="text-center text-gray-800 text-2xl font-bold pt-6">{item.name}</h2>
+          <h2 className="text-center text-pink-800 text-2xl font-bold pt-6">{item.name}</h2>
           <div className="w-5/6 m-auto">
-            <p className="text-center text-gray-500 pt-5"> {item.description}</p>
+            <p className="text-center text-pink-500 pt-5"> {item.description}</p>
           </div>
           <div className="grid grid-cols-4 w-72 lg:w-5/6 m-auto bg-indigo-50 mt-5 p-4 lg:p-4 rounded-2xl">
             <div className="col-span-1 flex">
@@ -241,8 +241,8 @@ const dashboard  = ()=>{
               <img className="flex justify-center w-15 lg:w-12" src="https://img.icons8.com/fluency/48/000000/ethereum.png" alt="music icon"/>
             </div>
             <div className="col-span-2 pt-1 ">
-              <p className="text-gray-800 font-bold lg:text-sm">Price</p>
-              <p className="text-gray-500 text-sm font-bold">{item.price} CKB</p>
+              <p className="text-pink-800 font-bold lg:text-sm">Price</p>
+              <p className="text-pink-500 text-sm font-bold">{item.price} CKB</p>
             </div>
         
           </div>
