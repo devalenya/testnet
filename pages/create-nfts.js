@@ -213,7 +213,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
                                     </svg>
                                     <div className="flex flex-auto max-h-48 w-2/5 mx-auto -mt-10">
                                         {
-                                            urlHash?    <img className="has-mask  object-center" src={https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png} alt="freepik image"/> :                                    <img className="has-mask h-36 object-center" src="https://img.freepik.com/free-vector/image-upload-concept-landing-page_52683-27130.jpg?size=338&ext=jpg" alt="freepik image"/>
+                                            urlHash?    <img className="has-mask  object-center" src="https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png" alt="freepik image"/> :                                    <img className="has-mask h-36 object-center" src="https://img.freepik.com/free-vector/image-upload-concept-landing-page_52683-27130.jpg?size=338&ext=jpg" alt="freepik image"/>
 
 
                                         }
