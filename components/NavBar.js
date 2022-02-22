@@ -24,12 +24,12 @@ import Link from 'next/link'
       <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
         <div className="logo flex-shrink-0 flex items-center">
         <div className="flex-shrink-0 flex items-center">
-          <img className="block lg:hidden h-8 w-auto" src="https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png" alt="Workflow"/>
-          <img className="hidden lg:block h-8 w-auto" src="https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png" alt="Workflow"/>
+          <img className="block lg:hidden h-8 w-auto" src="https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png" alt="LOGO"/>
+          <img className="hidden lg:block h-8 w-auto" src="https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png" alt="LOGO"/>
         </div>
         <div className="logoName">
             <Link  href="/">
-            <a className="text-yellow-500 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-bold">Exknowplay NFTs</a>
+            <a className="text-red-500 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-bold">Exknowplay NFTs</a>
             </Link>
             </div>
 
@@ -39,10 +39,10 @@ import Link from 'next/link'
         <div className="hidden sm:block sm:ml-6">
           <div className="flex space-x-4">
               <Link href="/">
-            <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Explore</a>
+            <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</a>
                 </Link>
                 <Link href="/dashboard">
-            <a  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Dashbaord</a>
+            <a  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">My NFT</a>
             </Link>
                 <Link href="/create-nfts">
             <a  className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Create NFt</a>
@@ -60,10 +60,10 @@ import Link from 'next/link'
   <div className="sm:hidden" id="mobile-menu">
     <div className="px-2 pt-2 pb-3 space-y-1">
        <Link  href="/">
-      <a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Explore</a>
+      <a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
       </Link>
                 <Link href="/dashboard">
-      <a  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Dashbaord</a>
+      <a  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">My NFT</a>
       </Link>
          <Link href="/create-nfts">
       <a  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Create NFt</a>
