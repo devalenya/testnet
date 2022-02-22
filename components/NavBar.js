@@ -45,7 +45,7 @@ import Link from 'next/link'
             <a  className="text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">My NFT</a>
             </Link>
                 <Link href="/create-nfts">
-            <a  className="text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Create NFt</a>
+            <a  className="text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Mint NFt</a>
             </Link>
                 
                 
@@ -66,7 +66,7 @@ import Link from 'next/link'
       <a  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">My NFT</a>
       </Link>
          <Link href="/create-nfts">
-      <a  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Create NFt</a>
+      <a  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Mint NFt</a>
       </Link>
      
     </div>
