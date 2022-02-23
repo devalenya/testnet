@@ -64,7 +64,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
 
     const [urlHash,setUrlHash] = useState()
-    const onChange = async(e)=>{
+    const onChange1 = async(e)=>{
         const file = e.target.files[0];
 
         console.log("before")
