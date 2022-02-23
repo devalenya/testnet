@@ -65,24 +65,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
 
 
-    const [urlHash,setUrlHash] = useState()
-    const onChange = async(e)=>{
-        const file = e.target.files[0];
-
-        console.log("before")
-
-        try{
-            console.log("after try")
-            const addedFile = await ipfsClient.add(file);
-            
-             const ipfsUrl = `https://ipfs.infura.io/ipfs/${addedFile.path}`;
-            setUrlHash(ipfsUrl)
-
-        }catch(e){
-            console.log(e)
-        }
-
-    }
+    
 
     const [nftFormInput,setNftFormInput] =useState({
         price:'',
