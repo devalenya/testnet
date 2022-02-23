@@ -223,7 +223,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
 
                                 </div>
-                                <input type="test" onChange = {e=>setNftFormInput({...nftFormInput,image:e.target.value})}/>
+                                <input type="text" onChange={onChange}/>
                             </label>
                         </div>
                     </div>
