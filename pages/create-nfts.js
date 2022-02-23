@@ -63,8 +63,10 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
     const[unsoldItems,setUnsoldItems]= useState([])
 
 
+
+
     const [urlHash,setUrlHash] = useState()
-    const onChange1 = async(e)=>{
+    const onChange = async(e)=>{
         const file = e.target.files[0];
 
         console.log("before")
@@ -76,12 +78,11 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
              const ipfsUrl = `https://ipfs.infura.io/ipfs/${addedFile.path}`;
             setUrlHash(ipfsUrl)
 
-            }catch(e){
+        }catch(e){
             console.log(e)
         }
-    }
 
-    
+    }
 
     const [nftFormInput,setNftFormInput] =useState({
         price:'',
@@ -97,7 +98,6 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
             name,description,image:urlHash
         });
 
-        
         try{
             const addedFile = await ipfsClient.add(data);
             
@@ -165,7 +165,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
  
            }else{
-               window.alert("You are at Wrong Network, set youe metamask wallet to BINANCE SMART CHAIN TESTNET then reload your page")
+               window.alert("You are at Wrong Netweok, Connect with Roposten Please")
            }
 
 
