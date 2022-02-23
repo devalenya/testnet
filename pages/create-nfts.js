@@ -223,7 +223,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
 
                                 </div>
-                                <input type="file" onChange={onChange} />
+                                <input type="file" />
                             </label>
                         </div>
                     </div>
