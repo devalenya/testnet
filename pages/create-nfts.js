@@ -165,7 +165,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
  
            }else{
-               window.alert("You are at Wrong Network, set youe metamask wallet to GODWOKEN POLYJUICE TESTNET then reload your page")
+               window.alert("You are at Wrong Network, set youe metamask wallet to BINANCE TESTNET then reload your page")
            }
 
 
@@ -194,7 +194,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
                 className = "mt-8 borderd rounded p-3 bg-pink-200"
                 placeholder="Enter your NFT Price in BNB "
                
-                onChange = {e=>setNftFormInput({...nftFormInput,price:e.target.0.002})}
+                onChange = {e=>setNftFormInput({...nftFormInput,price:e.target.value})}
                 />
                  <textarea
                 className = "mt-8 borderd rounded p-3 bg-pink-200"
