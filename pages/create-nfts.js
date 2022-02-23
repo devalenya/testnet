@@ -1,11 +1,11 @@
 import React,{useState,useEffect} from 'react'
-
+import { create } from 'ipfs-http-client'
 import Web3 from "web3"
 import detectEthereumProvider from '@metamask/detect-provider'
 import { useRouter } from 'next/router'
 
 
-
+const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
  const createNfts = () => {
 
     const[web3Api,setWe3Api] = useState({
