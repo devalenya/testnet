@@ -195,7 +195,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
                 placeholder="Enter your NFT Price "
                
                 onChange = {e=>setNftFormInput({...nftFormInput,price:e.target.value})}
-                disabled/>
+                />
                  <textarea
                 className = "mt-8 borderd rounded p-3 bg-pink-200"
                 placeholder="Enter your NFT Description"
