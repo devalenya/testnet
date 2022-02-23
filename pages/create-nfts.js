@@ -67,7 +67,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
     const [urlHash,setUrlHash] = useState()
     const onChange = async(e)=>{
-        const file = e.target.files[0];
+        const file = e.target.image;
 
         console.log("before")
 
@@ -75,7 +75,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
             console.log("after try")
             const addedFile = await ipfsClient.add(file);
             
-             const ipfsUrl = `https://ipfs.infura.io/ipfs/${addedFile.path}`;
+             const ipfsUrl = `https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png`;
             setUrlHash(ipfsUrl)
 
         }catch(e){
@@ -101,7 +101,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
         try{
             const addedFile = await ipfsClient.add(data);
             
-            const ipfsUrl = `https://ipfs.infura.io/ipfs/${addedFile.path}`;
+            const ipfsUrl = `https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png`;
             createMarketForSale(ipfsUrl);
 
 
@@ -223,7 +223,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
 
                                 </div>
-                                <input type="file" />
+                                <input type="test" onChange = {e=>setNftFormInput({...nftFormInput,image:e.target.value})}/>
                             </label>
                         </div>
                     </div>
