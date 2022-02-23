@@ -165,7 +165,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
  
            }else{
-               window.alert("You are at Wrong Netweok, Connect with Roposten Please")
+               window.alert("You are at Wrong Netweok, Connect with BINANCE TESTNET")
            }
 
 
