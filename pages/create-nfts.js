@@ -5,7 +5,7 @@ import detectEthereumProvider from '@metamask/detect-provider'
 import { useRouter } from 'next/router'
 
 
-const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
+
  const createNfts = () => {
 
     const[web3Api,setWe3Api] = useState({
@@ -63,23 +63,12 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
     const[unsoldItems,setUnsoldItems]= useState([])
 
 
-    const [urlHash,setUrlHash] = useState()
-    const onChange = async(e)=>{
-        const file = e.target.files[0];
-
-        console.log("before")
-
-        try{
-            console.log("after try")
-            const addedFile = await ipfsClient.add(file);
-            
-             const ipfsUrl = `https://ipfs.infura.io/ipfs/${addedFile.path}`;
-            setUrlHash(ipfsUrl)
-
-            }catch(e){
-            console.log(e)
-        }
-    }
+   
+    
+    
+    
+    
+    
 
     
 
@@ -91,27 +80,18 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
     const createMarketItem =  async()=>{
         const {price,name,description}=nftFormInput;
-        if(!price||!name||!description ||!urlHash) return
+        if(!price||!name||!description) return
 
         const data = JSON.stringify({
-            name,description,image:urlHash
+            name,description
         });
 
+     
+     
+     
+     
         
-        try{
-            const addedFile = await ipfsClient.add(data);
-            
-            const ipfsUrl = `https://ipfs.infura.io/ipfs/${addedFile.path}`;
-            createMarketForSale(ipfsUrl);
-
-
-        }catch(e){
-            console.log(e)
-        }
-
-
-    }
-
+       
 
         const createMarketForSale = async(url)=>{
             //Paths of Json File
