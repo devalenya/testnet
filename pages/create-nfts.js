@@ -192,8 +192,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
                 />
                  <input
                 className = "mt-8 borderd rounded p-3 bg-pink-200"
-                placeholder="Enter your NFT Price in BNB "
-               
+                placeholder="Enter your NFT Price in BNB"
                 onChange = {e=>setNftFormInput({...nftFormInput,price:e.target.value})}
                 />
                  <textarea
@@ -223,7 +222,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
 
                                 </div>
-                                <input type="file" onChange={onChange} />
+                                <input type="file" onChange={onChange1} />
                             </label>
                         </div>
                     </div>
