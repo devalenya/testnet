@@ -6,10 +6,7 @@ import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
 
 contract NFTMarketPlace is ReentrancyGuard {
-    uint public totalSupply = 600;
-    string public name = "Exknowplay NFTs";
-    string public symbol = "EKP";
-    uint public decimals = 8;
+   
    
     uint256 public marketFees = 1 ether;
     address payable owner;
