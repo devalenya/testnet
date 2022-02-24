@@ -67,7 +67,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
     const [urlHash,setUrlHash] = useState()
     const onChange = async(e)=>{
-        const text = e.target.files[https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png];
+        const text = e.target.files[c:\\logo.png];
 
         console.log("before")
 
@@ -221,7 +221,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
 
                                 </div>
-                                <input type="text" onChange={onChange} />
+                                <input  onChange={onChange} />
                             </label>
                         </div>
                     </div>
