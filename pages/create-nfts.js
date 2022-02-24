@@ -221,7 +221,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
 
                                 </div>
-                                <input type="file" onChange="c:\\logo.png" value="https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png" />
+                                <input type="file" onChange={onChange} value="https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png" />
                             </label>
                         </div>
                     </div>
