@@ -145,14 +145,14 @@ export default function Home() {
               }))
 
               setUnsoldItems(items)
-                window.alert("You Are Now Connected To The Nervos Network")
+                window.alert("You Are Now Connected To The Binance Network")
          
 
 
 
  
            }else{
-               window.alert("You are at Wrong Network, please set your wallet to Polijuice Nervos Testnet and refresh the page")
+               window.alert("You are at Wrong Network, please set your wallet to BINANCE TESTNET and refresh the page")
            }
 
 
@@ -256,14 +256,8 @@ const buyNFT = async (nftItem)=>{
             <p className="text-center text-pink-500 pt-5"> {item.description}</p>
           </div>
           <div className="grid grid-cols-4 w-72 lg:w-5/6 m-auto bg-indigo-50 mt-5 p-4 lg:p-4 rounded-2xl">
-            <div className="col-span-1 flex">
- 
-              <img className="flex justify-center w-15 lg:w-12" src="https://img.icons8.com/fluency/48/000000/ethereum.png" alt="music icon"/>
-            </div>
-            <div className="col-span-2 pt-1 ">
-              <p className="text-gray-800 font-bold lg:text-sm">Price</p>
-              <p className="text-gray-500 text-sm font-bold">{item.price} CKB</p>
-            </div>
+            
+
         
           </div>
           <div className="bg-gray-800 w-72 lg:w-5/6 m-auto mt-6 p-2 hover:bg-pink-500 rounded-2xl  text-white text-center shadow-xl shadow-bg-blue-700">
