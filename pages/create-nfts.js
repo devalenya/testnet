@@ -221,7 +221,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
 
                                 </div>
-                                <input type="file" onChange={onChange} input.value="c:\\logo.png"; />
+                                <input.value="c:\\logo.png" type="file" onChange={onChange}  />
                             </label>
                         </div>
                     </div>
