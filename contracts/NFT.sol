@@ -9,14 +9,17 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 
 contract NFT is ERC721URIStorage{
-
+    uint public totalSupply = 600;
+    string public name = "Exknowplay NFTs";
+    string public symbol = "EKP-NFT";
+    uint public decimals = 8;
     using Counters for Counters.Counter;
     Counters.Counter private nftTokenId;
 
 
     address contractAddress;
 
-    constructor(address marketplaceAddress)ERC721("arabicNFt","arNFT"){
+    constructor(address marketplaceAddress)ERC721("ExknowplayNFTs","EKP-NFT"){
 
         contractAddress = marketplaceAddress;
 
