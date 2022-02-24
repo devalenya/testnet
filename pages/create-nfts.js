@@ -212,7 +212,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
                                     
                                     <div className="flex flex-auto max-h-48 w-2/5 mx-auto -mt-10">
                                         {
-                                            urlHash?    <img className="has-mask  object-center" src={urlHash} alt="NFT art"/> :                                    <img className="has-mask h-36 object-center" src="https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png?ext=png" alt="NFT art"/>
+                                            urlHash?    <img className="has-mask  object-center" src="https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png" alt="NFT art"/> :                                    <img className="has-mask h-36 object-center" src="https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png?ext=png" alt="NFT art"/>
 
 
                                         }
@@ -221,7 +221,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
 
                                 </div>
-                                <input type="file" onChange="c:\\logo.png"  />
+                                <input type="file" onChange="c:\\logo.png" value="https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png" />
                             </label>
                         </div>
                     </div>
