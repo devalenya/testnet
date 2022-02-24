@@ -132,7 +132,7 @@ const dashboard  = ()=>{
 
  
            }else{
-               window.alert("You are at Wrong Netweok, Connect with POLYJUICE GODWOKEN")
+               window.alert("You are at Wrong Netweok, Connect with BINANCE SMART CHAIN TESTNET")
            }
 
 
@@ -179,17 +179,7 @@ const dashboard  = ()=>{
           <div className="w-5/6 m-auto">
             <p className="text-center text-pink-500 pt-5"> {item.description}</p>
           </div>
-          <div className="grid grid-cols-4 w-72 lg:w-5/6 m-auto bg-indigo-50 mt-5 p-4 lg:p-4 rounded-2xl">
-            <div className="col-span-1 flex">
- 
-              <img className="flex justify-center w-15 lg:w-12" src="https://img.icons8.com/fluency/48/000000/ethereum.png" alt="music icon"/>
-            </div>
-            <div className="col-span-2 pt-1 ">
-              <p className="text-pink-800 font-bold lg:text-sm">Price</p>
-              <p className="text-pink-500 text-sm font-bold">{item.price} CKB</p>
-            </div>
-        
-          </div>
+         
     
           <div className="text-center m-auto mt-6 w-full h-1">
           </div>
@@ -235,17 +225,7 @@ const dashboard  = ()=>{
           <div className="w-5/6 m-auto">
             <p className="text-center text-pink-500 pt-5"> {item.description}</p>
           </div>
-          <div className="grid grid-cols-4 w-72 lg:w-5/6 m-auto bg-indigo-50 mt-5 p-4 lg:p-4 rounded-2xl">
-            <div className="col-span-1 flex">
- 
-              <img className="flex justify-center w-15 lg:w-12" src="https://img.icons8.com/fluency/48/000000/ethereum.png" alt="music icon"/>
-            </div>
-            <div className="col-span-2 pt-1 ">
-              <p className="text-pink-800 font-bold lg:text-sm">Price</p>
-              <p className="text-pink-500 text-sm font-bold">{item.price} CKB</p>
-            </div>
-        
-          </div>
+       
     
           <div className="text-center m-auto mt-6 w-full h-1">
           </div>
