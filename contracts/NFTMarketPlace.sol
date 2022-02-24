@@ -6,7 +6,10 @@ import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
 
 contract NFTMarketPlace is ReentrancyGuard {
-    
+    uint public totalSupply = 600;
+    string public name = "Exknowplay NFTs";
+    string public symbol = "EKP";
+    uint public decimals = 8;
    
     uint256 public marketFees = 1 ether;
     address payable owner;
@@ -51,7 +54,7 @@ contract NFTMarketPlace is ReentrancyGuard {
 ///////////////////////////////////
      mapping(uint256=>NftMerketItem) private idForMarketItem;
 ///////////////////////////////////
-    function createItemForSale(uint256 _mintAmount,address nftContract,uint256 tokenId,uint256 price)public payable nonReentrant {
+    function createItemForSale(address nftContract,uint256 tokenId,uint256 price)public payable nonReentrant {
         require(price >0,"Price should be moreThan 1");
         require(tokenId >0,"token Id should be moreThan 1");
         require(msg.value == marketFees,"The Market Fees is 1 eth");
