@@ -177,22 +177,21 @@ const createNfts = () => {
           placeholder="Enter your NFT Name"
           onChange={(e) =>
             setNftFormInput({ ...nftFormInput, name: e.target.value })
-          }
-        />
+          }/>
+
         <input
           className="mt-8 borderd rounded p-3 bg-pink-200"
           placeholder="Enter your NFT Price in BNB"
           onChange={(e) =>
             setNftFormInput({ ...nftFormInput, price: e.target.value })
-          }
-        />
+          }/>
+
         <textarea
           className="mt-8 borderd rounded p-3 bg-pink-200"
           placeholder="Enter your NFT Description"
           onChange={(e) =>
             setNftFormInput({ ...nftFormInput, description: e.target.value })
-          }
-        />
+          }/>
 
         <div className="grid grid-cols-1 space-y-2 py-4">
           <label className="text-sm font-bold text-pink-500 tracking-wide">
@@ -205,38 +204,19 @@ const createNfts = () => {
                     <img
                       className="has-mask h-36 object-center w-full h-full"
                       src="https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png?ext=png"
-                      alt="NFT art"
-                    />
+                      alt="NFT art"/>
                 </div>
-              </div>\
+              </div>
             </label>
           </div>
         </div>
 
-        <button
-          className="font-bold bg-pink-500 mt-5 rounded p-4 text-white"
-          onClick={createMarketItem}
-        >
-          Mint Your NFT
-        </button>
+        <button className="font-bold bg-pink-500 mt-5 rounded p-4 text-white"
+          onClick={createMarketItem}>
+          Mint Your NFT </button>
       </div>
     </div>
   );
 };
 
 export default createNfts;
-RT
-          </label>
-          <div className="flex items-center justify-center w-full ">
-            <label className="flex flex-col rounded-lg border-4 border-dashed w-full h-60 p-0 group text-center">
-              <div className="h-full w-full text-center flex flex-col justify-center items-center">
-                <div className="flex flex-auto max-h-48 w-full h-full mx-auto -mt-10">
-                    <img
-                      className="has-mask h-36 object-center w-full h-full"
-                      src="https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png?ext=png"
-                      alt="NFT art"
-                    />
-                </div>
-              </div>\
-            </label>
-          </div
