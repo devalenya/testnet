@@ -28,6 +28,7 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
         const loadProvider = async()=>{
             const provider =  await detectEthereumProvider();
 
+         
             if(provider){
                 providerChanged(provider);
                 setWe3Api({
@@ -67,13 +68,13 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
     const [urlHash,setUrlHash] = useState()
     const onChange = async(e)=>{
-        const text = e.target.files[0];
+        const file = e.target.files[0];
 
         console.log("before")
 
         try{
             console.log("after try")
-            const addedFile = await ipfsClient.add(text);
+            const addedFile = await ipfsClient.add(file);
             
              const ipfsUrl = `https://ipfs.infura.io/ipfs/${addedFile.path}`;
             setUrlHash(ipfsUrl)
