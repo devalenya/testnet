@@ -255,14 +255,8 @@ const buyNFT = async (nftItem)=>{
           <div className="w-5/6 m-auto">
             <p className="text-center text-pink-500 pt-5"> {item.description}</p>
           </div>
-          <div className="grid grid-cols-4 w-72 lg:w-5/6 m-auto bg-indigo-50 mt-5 p-4 lg:p-4 rounded-2xl">
-            
+          
 
-        
-          </div>
-          <div className="bg-gray-800 w-72 lg:w-5/6 m-auto mt-6 p-2 hover:bg-pink-500 rounded-2xl  text-white text-center shadow-xl shadow-bg-blue-700">
-            
-          </div>
           <div className="text-center m-auto mt-6 w-full h-1">
           </div>
         </div>
