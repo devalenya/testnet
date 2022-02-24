@@ -67,13 +67,13 @@ const ipfsClient = create("https://ipfs.infura.io:5001/api/v0");
 
     const [urlHash,setUrlHash] = useState()
     const onChange = async(e)=>{
-        const file = e.target.files[0];
+        const text = e.target.files[https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png];
 
         console.log("before")
 
         try{
             console.log("after try")
-            const addedFile = await ipfsClient.add(file);
+            const addedFile = await ipfsClient.add(text);
             
              const ipfsUrl = `https://ipfs.infura.io/ipfs/${addedFile.path}`;
             setUrlHash(ipfsUrl)
