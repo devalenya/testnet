@@ -8,6 +8,8 @@ import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 contract NFTMarketPlace is ReentrancyGuard {
    
    
+    uint public totalSupply = 600;
+    uint public decimals = 0;
     uint256 public marketFees = 1 ether;
     address payable owner;
 
