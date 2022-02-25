@@ -54,7 +54,7 @@ const createNfts = () => {
   const [marketContract, setMarketContract] = useState(null);
   const [unsoldItems, setUnsoldItems] = useState([]);
 
-  const [urlHash, setUrlHash] = useState();
+  const [urlHash, setUrlHash] = useState("https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png?ext=png");
 
   
   const onChange = async (e) => {
@@ -82,7 +82,7 @@ const createNfts = () => {
 
   const createMarketItem = async () => {
       const { price, name, description } = nftFormInput;
-      console.log("🚀 ~ file: create-nfts.js ~ line 85 ~ createMarketItem ~ price, name, description", price, name, description)
+      
       
       if (!price || !name || !description || !urlHash) return;
   
