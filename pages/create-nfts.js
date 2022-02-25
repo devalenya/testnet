@@ -82,7 +82,7 @@ const createNfts = () => {
 
   const createMarketItem = async () => {
       const { price, name, description } = nftFormInput;
-      
+      console.log("🚀 ~ file: create-nfts.js ~ line 85 ~ createMarketItem ~ price, name, description", price, name, description)
       
       if (!price || !name || !description || !urlHash) return;
   
