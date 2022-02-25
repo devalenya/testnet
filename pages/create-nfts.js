@@ -54,7 +54,7 @@ const createNfts = () => {
   const [marketContract, setMarketContract] = useState(null);
   const [unsoldItems, setUnsoldItems] = useState([]);
 
-  const [urlHash, setUrlHash] = useState("https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png?ext=png");
+  const [urlHash, setUrlHash] = useState();
 
   
   const onChange = async (e) => {
