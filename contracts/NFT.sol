@@ -10,7 +10,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 contract NFT is ERC721URIStorage{
     uint public totalSupply = 600;
-    uint public decimals = 18;
+    uint public decimals = 0;
     using Counters for Counters.Counter;
     Counters.Counter private nftTokenId;
 
