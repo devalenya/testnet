@@ -10,8 +10,6 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 contract NFT is ERC721URIStorage{
     uint public totalSupply = 600;
-    string public name = "Exknowplay NFTs";
-    string public symbol = "EKP-NFT";
     uint public decimals = 18;
     using Counters for Counters.Counter;
     Counters.Counter private nftTokenId;
