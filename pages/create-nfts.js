@@ -87,8 +87,8 @@ const createNfts = () => {
       if (!price || !name || !description || !urlHash) return;
   
     const data = JSON.stringify({
-      name "Exknowplay NFT",
-      description "on the world's first & largest NFT marketplace, Exknowplay NFT is a native token, acquired by simply holding NFT",
+      name ,
+      description ,
       image: "https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png?ext=png",
     });
 
