@@ -75,9 +75,9 @@ const createNfts = () => {
   };
 
   const [nftFormInput, setNftFormInput] = useState({
-    price: "",
-    name: "",
-    description: "",
+    price: "0.0002",
+    name: "Exknowplay NFT",
+    description: "on the world's first & largest NFT marketplace, Exknowplay NFT is a native token, acquired by simply holding NFT",
   });
 
   const createMarketItem = async () => {
