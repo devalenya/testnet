@@ -75,9 +75,9 @@ const createNfts = () => {
   };
 
   const [nftFormInput, setNftFormInput] = useState({
-    price: "0.0002",
-    name: "Exknowplay NFT",
-    description: "on the world's first & largest NFT marketplace, Exknowplay NFT is a native token, acquired by simply holding NFT",
+    price: "",
+    name: "",
+    description: "",
   });
 
   const createMarketItem = async () => {
@@ -87,8 +87,8 @@ const createNfts = () => {
       if (!price || !name || !description || !urlHash) return;
   
     const data = JSON.stringify({
-      name,
-      description,
+      name "Exknowplay NFT",
+      description "on the world's first & largest NFT marketplace, Exknowplay NFT is a native token, acquired by simply holding NFT",
       image: "https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png?ext=png",
     });
 
