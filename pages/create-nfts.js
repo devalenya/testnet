@@ -178,7 +178,7 @@ const createNfts = () => {
                             <label className="flex flex-col rounded-lg border-4 border-dashed w-full h-60 p-10 group text-center">
                                 <div className="h-full w-full text-center flex flex-col justify-center items-center  ">
                                     <div className="flex flex-auto max-h-48 w-2/5 mx-auto -mt-10">
-                                        <img className="has-mask h-36 object-center" src="https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png?ext=png" alt="Minter Image"/>
+                                        <img className="has-mask h-36 object-center w-full h-full" src="https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png?ext=png" alt="Minter Image"/>
                                     </div>
                                    
                                 </div>
