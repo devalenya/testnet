@@ -85,6 +85,7 @@ const HeadSection = () => {
 
 
        return (
+        <div className="bg-black w-full">
          <div className="relative max-w-7xl mx-auto px-4 dark:bg-bgcolor">
           <section>
               <div className="relative dark:bg-bgcolor overflow-hidden">
@@ -130,7 +131,7 @@ const HeadSection = () => {
 
                            </section>
                            
-                       </div>
+                       </div></div>
                    )
                }
 
