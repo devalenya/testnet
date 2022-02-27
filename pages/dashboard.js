@@ -151,7 +151,7 @@ const dashboard  = ()=>{
 
 
     return (
-         <div >
+         <div className="bg-black w-full">
         
            <div className = "flex justify-center">
 
