@@ -170,6 +170,7 @@ const createNfts = () => {
   };
 
   return (
+<div className="bg-black w-full">
     <div className="flex justify-center">
       <div className="w-1/2 flex flex-col pb-11">
                 
@@ -213,7 +214,7 @@ const createNfts = () => {
           onClick={createMarketItem}>
           Mint Your NFT </button>
       </div>
-    </div>
+    </div></div>
   );
 };
 
