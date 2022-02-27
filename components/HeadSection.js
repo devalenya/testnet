@@ -30,7 +30,7 @@ const HeadSection = () => {
 
              window.alert("Unlock Your Wallet or Install a Wallet Like Metamask")
                
-             router.push("https://metamask.io/download.html")
+             
            }
 
 
