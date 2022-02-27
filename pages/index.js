@@ -41,7 +41,7 @@ export default function Home() {
 
               window.alert(" Connect Your Wallet Or Please install provider wallet like MetaMask")
                 
-              router.push("https://metamask.io/download.html")
+              
             }
 
 
@@ -184,6 +184,7 @@ const buyNFT = async (nftItem)=>{
 
 
     return (
+<div className="bg-black w-full ">
          <div >
            {
                 web3Api.provider ? <HeadSection/> : ""
@@ -278,7 +279,7 @@ const buyNFT = async (nftItem)=>{
            </div>
            
              
-         </div>
+         </div></div>
     )
 
 
