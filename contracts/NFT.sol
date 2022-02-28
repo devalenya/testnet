@@ -16,7 +16,7 @@ contract NFT is ERC721URIStorage{
 
     address contractAddress;
 
-    constructor(address marketplaceAddress)ERC721("arabicNFt","arNFT"){
+    constructor(address marketplaceAddress)ERC721("ExknowplayNFT", "ExkpNFT"){
 
         contractAddress = marketplaceAddress;
 
