@@ -7,8 +7,11 @@ import footer from './footer';
         <div>
             <NavBar/>
             {props.children}
+        </div>
+        <div>
             <footer/>
         </div>
+     
     )
 }
 
