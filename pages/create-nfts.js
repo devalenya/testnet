@@ -171,6 +171,13 @@ const createNfts = () => {
 
   return (
 <div className="bg-black w-full">
+    {
+                web3Api.provider ? <HeadSection/> : ""
+           }
+           <HeadAccount >{{account:account,balance:accountBalance}}</HeadAccount>
+    
+    
+    
     <div className="flex justify-center">
       <div className="w-1/2 flex flex-col pb-11">
                 
