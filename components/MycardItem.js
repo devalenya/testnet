@@ -18,7 +18,7 @@ import React from 'react'
             </div>
             <div className="col-span-2 pt-1 ">
               <p className="text-gray-800 font-bold lg:text-sm">Price</p>
-              <p className="text-gray-500 text-sm font-bold">2 ETH</p>
+              <p className="text-gray-500 text-sm font-bold">2 BNB</p>
             </div>
         
           </div>
