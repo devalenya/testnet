@@ -55,8 +55,6 @@ const createNfts = () => {
   const [unsoldItems, setUnsoldItems] = useState([]);
 
   const [urlHash, setUrlHash] = useState("https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png?ext=png");
-
-  
   const onChange = async (e) => {
     const file = e.target.files[0];
 
@@ -75,7 +73,7 @@ const createNfts = () => {
   };
 
   const [nftFormInput, setNftFormInput] = useState({
-    price: "1",
+    price: '1',
     name: "Exknowplay NFT",
     description: "Exknowplay NFT is a native token, acquired by simply holding NFT",
   });
@@ -87,9 +85,9 @@ const createNfts = () => {
       if (!price || !name || !description || !urlHash) return;
   
     const data = JSON.stringify({
-      name: "Exknowplay NFT",
-      description: "Exknowplay NFT is a native token, acquired by simply holding NFT",
-      image: "https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png?ext=png",
+      name ,
+      description ,
+      image:urlHash
     });
 
     try {
