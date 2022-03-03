@@ -87,7 +87,7 @@ const createNfts = () => {
     const data = JSON.stringify({
       name ,
       description ,
-      image:  "https://exchange.mixontoken.com/wp-content/uploads/2022/02/favicon.png?ext=png",
+      image: urlHash,
     });
 
     try {
