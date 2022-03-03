@@ -73,7 +73,7 @@ const createNfts = () => {
   };
 
   const [nftFormInput, setNftFormInput] = useState({
-    price: '1',
+    price: "1",
     name: "Exknowplay NFT",
     description: "Exknowplay NFT is a native token, acquired by simply holding NFT",
   });
